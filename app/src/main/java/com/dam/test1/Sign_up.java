@@ -72,6 +72,7 @@ public class Sign_up extends AppCompatActivity implements View.OnClickListener {
 
         User userData = new User(name, password, email);
         Log.d("user: ", userData.toString());
+
         Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
         if (userStore.getUserData() != null) {
             Toast.makeText(this, R.string.sign_up_error, Toast.LENGTH_SHORT).show();
